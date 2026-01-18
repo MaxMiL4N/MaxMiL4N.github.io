@@ -1,60 +1,106 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="pl"><head>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="maxmil4n.github.io​">
-    <meta name="description" content="">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="homepage.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 6.2.4, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "main",
-		"url": "/"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="homepage">
-    <meta property="og:type" content="website">
-    <link rel="canonical" href="/">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-home-page="https://website6136098.nicepage.io/homepage.html?version=c99980f9-0fd4-2317-147f-acd987e2bd8d" data-home-page-title="homepage" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="pl"><header class="u-clearfix u-header u-palette-5-dark-1 u-header" id="sec-b2f0"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h1 class="u-custom-font u-text u-text-default u-text-font u-text-1">maxmil4n.github.io </h1>
-      </div></header>
-    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="256" data-image-height="256" id="sec-b787">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-large-text u-text u-text-default u-text-variant u-text-1"></p><br>
+    <title>Strona Główna</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <script>
-          function podajkod() {
-              var kod = parseInt(prompt("Kod"));
-              if (kod === 48956123) {
-              window.location.replace("https://maxmil4n.github.io/szczurobiegi");
-              }
-              else {
-                alert("Podano niewłaściwy kod.")
-              }
-          }
-          document.write("<a onClick='podajkod()' class='u-btn u-button-style u-palette-2-base u-btn-1'>🔒 Szczurobiegi site 🔒</a>")
-        </script>
-        
+        body {
+            background: linear-gradient(135deg, #001a4d 0%, #003d99 50%, #001a4d 100%);
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: #ffffff;
+        }
 
-        <a href="https://maxmil4n.github.io/archiwum_lekcji" class="u-btn u-button-style u-palette-2-base u-btn-1">Archiwum lekcji</a>
-        <p class="u-large-text u-text u-text-default u-text-variant u-text-1">You can also listen to this absolute banger:</p>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Qh10T7u43YciJsJa99R3v?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      </section>
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-5d99"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">maxmil4n.github.io | Thanks for visiting</p>
-      </div></footer>
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
 
-  
-</body></html>
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(30, 40, 80, 0.9);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            border-radius: 10px;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .container p {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
+            color: #ffffff;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
+            margin: 10px 0 0 0;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
+            box-shadow: 0 6px 20px rgba(0, 102, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STRONA GŁÓWNA MAXMIL4N.GITHUB.IO</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <p><b>↓</b> Zaglądnij na te strony <b>↓</b></p>
+            <a href="https://maxmil4n.github.io/archiwum_lekcji" class="btn">ARCHIWUM LEKCJI</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dzięki za odwiedzenie &lt;3</p>
+    </footer>
+</body>
+</html>
